@@ -1,0 +1,76 @@
+/**
+ * ----------------------
+ * OVERRIDING PATH ROOTS
+ * ----------------------
+ * You'll need to define these vars to set the proper
+ * path base for static assets
+ */
+$static-image-path: 'node_modules/@salesforce-ux/design-system/assets/images/';
+$static-font-path: 'node_modules/@salesforce-ux/design-system/assets/fonts/webfonts/';
+
+
+/**
+ * ----------------------------------------------------
+ * NOTE: This should not be necessary, but currently is.
+ * These image paths are unfortunately hardcoded.
+ *
+ * This group of overrides, along with properly setting
+ * the $static-image-path above, resolve this shortfall.
+ *
+ * The SLDS team will address this in a patch. Keep an
+ * eye on our release notes.
+ * ----------------------------------------------------
+ */
+$brand-logo-image: $static-image-path + 'logo-noname.svg';
+
+$user-default-avatar:  $static-image-path + 'profile_avatar_200.png';
+$user-default-avatar-medium: $static-image-path + 'profile_avatar_160.png';
+$user-default-avatar-small: $static-image-path + 'profile_avatar_96.png';
+
+$group-default-avatar: $static-image-path + 'group_avatar_200.png';
+$group-default-avatar-medium:  $static-image-path + 'group_avatar_160.png';
+$group-default-avatar-small: $static-image-path + 'group_avatar_96.png';
+
+$popover-walkthrough-header-image: $static-image-path + 'popovers/popover-header.png';
+$popover-walkthrough-alt-image: $static-image-path + 'popovers/popover-action.png';
+
+$einstein-header-background: $static-image-path + 'einstein-headers/einstein-header-background.svg';
+$einstein-header-figure: $static-image-path + 'einstein-headers/einstein-figure.svg';
+
+$welcome-mat-background-image-info: $static-image-path + 'welcome-mat/bg-info@2x.png';
+
+$brand-band-default-image: $static-image-path + 'themes/oneSalesforce/banner-brand-default.png';
+$banner-user-default-image: $static-image-path + 'themes/oneSalesforce/banner-user-default.png';
+$banner-group-default-image: $static-image-path + 'themes/oneSalesforce/banner-group-public-default.png';
+
+
+/**
+ * ----------------------------
+ * YOUR TOKEN OVERRIDES GO HERE
+ * ----------------------------
+ * SLDS Design Tokens are documented here:
+ * https://lightningdesignsystem.com/design-tokens
+ *
+ * Any token can be overridden, but SLDS only recommends you override
+ * tokens that are marked 'GA'. Customize others at your own risk.
+ */
+
+$brand-light: #f7f2f9;
+$brand-light-active: darken($brand-light, 5);
+
+$brand-primary: #b57dd7;
+$brand-primary-active: darken($brand-primary, 5);
+
+$brand-accessible: #7f3cac;
+$brand-accessible-active: darken($brand-accessible, 5);
+
+$brand-dark: #421c5b;
+$brand-dark-active: darken($brand-dark, 5);
+
+
+/**
+ * -----------------------------------
+ * Finally, import the base SLDS file.
+ * -----------------------------------
+ */
+@import 'node_modules/@salesforce-ux/design-system/scss/index.scss'

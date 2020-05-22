@@ -1,0 +1,15 @@
+{
+  "name": "customized-slds",
+  "version": "1.0.0",
+  "description": "Simple example of how to override SLDS tokens and compile from sass source",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "author": "Jade Pennig <jpennig@salesforce.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@salesforce-ux/design-system": "^2.11.9",
+    "parcel": "^1.12.4",
+    "sass": "^1.26.5"
+  }
+}
