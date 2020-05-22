@@ -1,10 +1,11 @@
 # Customized SLDS Example
 
-Simple example of how to override SLDS tokens and compile from sass source.
+This is a simple example of how to include SLDS through npm, in order to override
+design tokens and compile SLDS from the source Sass files.
 
 This example uses Parcel as a lightweight package manager / bundler.
 
-Example HTML is in `index.html`, and the Sass Setup where you override the
+The example HTML is in `index.html`, and the Sass setup where you override the
 design tokens and include the SLDS Source Sass for compilation exists in
 `my-slds.scss`.
 
